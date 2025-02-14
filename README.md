@@ -10,21 +10,21 @@ With the release of version 2.0 of the ontology the name has been changed to a) 
 
 In addition to the name change, the ontology now has a new namespace and prefix.
 
-Namespace: https://ontology.swissartresearch.net/aaao/
-Prefix: aaao
+* Namespace: https://ontology.swissartresearch.net/aaao/
+* Prefix: aaao
 
 The new namespace references the long term institutional home of the ontology, hosted by the Swiss Art Research Infrastructure. 
 
 This repository is maintained through a collaboration between:
 
-the Swiss Art Research Infrastructure (https://www.sari.uzh.ch/en.html)
-Takin.solutions (https://takin.solutions)
+* the Swiss Art Research Infrastructure (https://www.sari.uzh.ch/en.html)
+* Takin.solutions (https://takin.solutions)
 
 
 
 AAAo is developed and maintained using the OntoMe tool. The project space for AAAo can be found here:
 
-https://ontome.net/project/69
+* https://ontome.net/project/69
 
 Changes to the ontology are managed through that tool.
 
