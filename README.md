@@ -32,6 +32,14 @@ Discussions, suggestions and queries relative to the ontology should be raised u
 
 In this repository users will find the different stable versions of AAAo which can be used for creating, managing and querying semantic data using the AAAo and its extensions. Each release includes at least a specification document in pdf format, explaining the ontology, and an rdfs file which enables its implementation as a semantic web ontology in rdfs supporting platforms and systems.
 
+Tools
+
+In addition to the ontology itself, we aim to provide different tools and documentation supporting the understanding and uptake of the ontology. 
+
+Draw.io Library
+
+Under the tools section of this repo, you will find a draw.io library to aid in formulating diagrams and proposal using the ontology. This library has been generated following the methods established for the CIDOC CRM and implemented by the Canadian Heritage Information Network (https://www.canada.ca/en/heritage-information-network.html). The creation of the draw.io library has been made possible with their support.
+
 
 This is version 2.0.
 
