@@ -49,5 +49,6 @@ To explore past versions, please find the 'stable' branches.
 
 For releases under the CRMaaa name, please refer to the old repository: https://github.com/swiss-art-research-net/crmaaa
 
-The formalisation and publication of the Art and Architectural Argumentation Ontology have been generously funded by 
+The formalisation and publication of the Art and Architectural Argumentation Ontology have been generously funded by: 
+
 <img src="/img/swissuniversities.svg" width="360"/>
