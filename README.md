@@ -1,6 +1,6 @@
 ## Art and Architectural Argumentation Ontology Repository Description ##
 
-<img src="/img/AAAo.svg" width="360"/>
+<img src="/img/AAAo.svg" width="320"/>
 
 This repository exists to provide a point of access for users to download the stable releases of the Art and Architectural Argumentation Ontology (AAAo). 
 
@@ -49,4 +49,5 @@ To explore past versions, please find the 'stable' branches.
 
 For releases under the CRMaaa name, please refer to the old repository: https://github.com/swiss-art-research-net/crmaaa
 
+The formalisation and publication of the Art and Architectural Argumentation Ontology have been generously funded by 
 <img src="/img/swissuniversities.svg" width="360"/>
