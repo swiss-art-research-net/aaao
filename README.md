@@ -1,5 +1,7 @@
 ## Art and Architectural Argumentation Ontology Repository Description ##
 
+<img src="/img/AAAo.svg" width="360"/>
+
 This repository exists to provide a point of access for users to download the stable releases of the Art and Architectural Argumentation Ontology (AAAo). 
 
 AAAo is built in reference to and extending the CIDOC CRM standard (https://www.cidoc-crm.org) and is designed to support the representation of historical data not easily represented using that standard. It introduces the key concepts of institutional fact and speech act in order to support the representation of socially grounded yet objective historical facts. For details of this modelling pattern and strategy please refer to the specification and surrounding documentation.
@@ -46,3 +48,5 @@ This is version 2.0.
 To explore past versions, please find the 'stable' branches.
 
 For releases under the CRMaaa name, please refer to the old repository: https://github.com/swiss-art-research-net/crmaaa
+
+<img src="/img/swissuniversities.svg" width="360"/>
