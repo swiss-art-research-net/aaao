@@ -1229,6 +1229,594 @@ The case of speech act (ZE13) is a special case of symbolic act where the perfor
   <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP77i_is_place_ascribed_by">
     <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
     <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the place in a locative association that is taken to hold for an entity.</rdfs:comment>
+      <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP1i_is_intentional_subject_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to connect an instance of institutional fact to an entity with which it is concerned. The intentional subject indicated by this property is the object about which the institutional fact holds for the group committed to this institutional reality.</rdfs:comment>
+    <rdfs:label xml:lang="en">is intentional subject of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP1i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+  </rdf:Property>
+<rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP2i_is_intentional_target_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the entity which an instance of institutional fact ascribes to its subject. The intentional target indicated by this property is the object which the institutional fact establishes as holding of its subject for the group committed to this institutional reality. The manner of its holding is indicated by the intentional relation.</rdfs:comment>
+    <rdfs:label xml:lang="en">is intentional target ascribed  by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP2i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP3i_is_intentional_relation_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the relationship which an instance of institutional fact takes to hold between its subject and its object. The intentional relation indicated by this property is the kind of relationship which the institutional fact establishes as holding between them  for the group committed to this institutional reality.</rdfs:comment>
+    <rdfs:label xml:lang="en">is intentional relation ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP3i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP4i_holds">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the community or group for whom an instance of institutional fact holds. Institutional facts have identity only relative to some group for whom they have a significance as formulated through a chosen symbolic system. </rdfs:comment>
+    <rdfs:label xml:lang="en">holds</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP4i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP5i_is_appellative_subject_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the entity for which an appellation holds as institutional fact.</rdfs:comment>
+    <rdfs:label xml:lang="en">is appellative subject of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP5i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE2_Appellative_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1i_is_intentional_subject_of" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP6i_is_appellation_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the appellation which is indicated as holding for the named subject of the appellative status.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is appellation ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP6i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE2_Appellative_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2i_is_intentional_target_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP7i_is_appellative_relation_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the specific manner in which the appellation which is indicated as holding for the named subject  of the appellative status pertains to this subject.</rdfs:comment>
+    <rdfs:label xml:lang="en">is  appellative relation ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP7i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE2_Appellative_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3i_is_intentional_relation_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP8i_is_contact_point_subject_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the entity for which a contact point has been specified as means of contact.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is contact point subject of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP8i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE3_Contact_Point_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP5i_is_appellative_subject_of" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP9i_is_contact_point_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the contact point which is indicated as holding for the named subject of the contact status.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is contact point ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP9i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE3_Contact_Point_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP6i_is_appellation_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP10i_is_contact_point_relation_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the specific manner in which the contact point which is indicated as holding for the named subject  of the contact status pertains to this subject.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is contact point relation ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP10i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE3_Contact_Point_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP7i_is_appellative_relation_ascribed_by" />
+  </rdf:Property>
+<rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP11i_is_classificatory_subject_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the entity for which a certain classification is taken to hold by the instance of classificatory status.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is classificatory subject of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP11i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE4_Classificatory_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1i_is_intentional_subject_of" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP12i_is_classification_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the type which is indicated as holding for the subject of the classification status.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is clsasification ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP12i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE4_Classificatory_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2i_is_intentional_target_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP13i_is_classification_relation_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the specific manner in which the type which is indicated as holding for the subject  of the classification status pertains to this subject.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is classification relation ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP13i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE4_Classificatory_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3i_is_intentional_relation_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP14i_is_functional_subject_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the entity for which a certain functional classification is taken to hold by the instance of functional status.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is functional subject of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP14i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE5_Function_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP11i_is_classificatory_subject_of" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP15i_is_function_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the type of function which is indicated as holding for the subject of the function status.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is function ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP15i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE5_Function_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP12i_is_classification_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP16i_is_functional_relation_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the specific manner in which the function which is indicated as holding for the subject  of the function status pertains to this subject.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is functional relation ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP16i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE5_Function_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP13i_is_classification_relation_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP17i_is_social_status_subject_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the actor for which a certain social status is taken to hold by the instance of social status.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is social status subject of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP17i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE6_Social_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP11i_is_classificatory_subject_of" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP18i_is_social_status_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the type of social status which is indicated as holding for the subject of the social status ascription.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is social status ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP18i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE6_Social_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP12i_is_classification_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP19i_is_social_status_relation_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the specific manner in which the type of social status which is indicated as holding for the subject pertains to this subject.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is social status relation ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP19i</skos:notation>
+    <rdfs:relation rdf:resource="https://ontology.swissartresearch.net/aaao/ZE6_Social_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP13i_is_classification_relation_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP20i_is_custodial_subject_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the physical thing over which a certain custodial status is taken to hold.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is custodial subject of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP20i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE7_Custodial_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1i_is_intentional_subject_of" />
+  </rdf:Property>
+ <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP21i_is_custodian_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the custodian to whom the custody of the physical thing which is the subject of the custodial status redounds.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is custodian ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP21i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE7_Custodial_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2i_is_intentional_target_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP22i_is_custodial_relation_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the specific manner in which the custodial status which is indicated as holding over the legal object by the custodian pertains to this subject.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is  custodial relation ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP22i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE7_Custodial_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3i_is_intentional_relation_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP23i_is_ownership_subject_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the legal object over which a certain ownership status is taken to hold.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is ownership subject of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP23i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE8_Ownership_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1i_is_intentional_subject_of" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP24i_is_owner_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the owner to whom the title of the legal object which is the subject of the ownership status redounds.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is owner ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP24i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE8_Ownership_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2i_is_intentional_target_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP25i_is_ownership_relation_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the specific manner in which the ownership status which is indicated as holding over the legal object by the owner pertains to this subject.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is ownership relation ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP25i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE8_Ownership_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3i_is_intentional_relation_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP26i_is_residence_subject_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the actor for whom the residence status is taken to hold.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is residence subject of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP26i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE9_Residential_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1i_is_intentional_subject_of" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP27i_is_residence_place_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the place at which the subject of the residence status is taken to reside or dwell.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is residence place ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP27i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE9_Residential_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2i_is_intentional_target_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP28i_is_residence_relation_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the specific manner in which the residence status which is indicated as holding over the actor pertains to this subject.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is residence relation ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP28i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE9_Residential_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3i_is_intentional_relation_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP29i_is_familial_subject_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the person for whom the family status is taken to hold.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is familial subject of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP29i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE10_Family_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1i_is_intentional_subject_of" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP30i_is_relative_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the person with whom the subject of the family relation status has the familial relation which they have.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is  relative acribed of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP30i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE10_Family_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2i_is_intentional_target_ascribed_by" />
+  </rdf:Property>
+<rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP31i_is_familial_relation_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the specific type of family status which is indicated as holding between the subject individual and his/her ascribed relative.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is familial relation ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP31i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE10_Family_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3i_is_intentional_relation_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP32i_is_membership_subject_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the person or group for whom the membership status is taken to hold.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is membership subject of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP32i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE11_Membership_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1i_is_intentional_subject_of" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP33i_is_group_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the group ascribed to the subject person of the membership status as having a membership relation thereto.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is group ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP33i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE11_Membership_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2i_is_intentional_target_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP34i_is_membership_relation_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the specific type of membership status which is indicated as holding between the subject actor and the group to which it is ascribed as being a member.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is membership relation ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP34i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE11_Membership_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3i_is_intentional_relation_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP35i_is_referential_subject_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the propositional object for which the referential status is taken to hold.</rdfs:comment>
+    <rdfs:label xml:lang="en">is referential subject of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP35i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE12_Referential_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1i_is_intentional_subject_of" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP36i_referent_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the referent to which the subject propositional object is taken to refer.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is referent ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP36i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE12_Referential_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2i_is_intentional_target_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP37i_is_referential_relation_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the specific type of referential status which is indicated as holding between the subject propositional object and its indicated intended referent.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is referential relation ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP37i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE12_Referential_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3i_is_intentional_relation_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP38i_is_referential_mode_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the specific manner in which the referential status which is indicated as holding between the subject propositional object and its indicated intended referent holds.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">is  referential mode ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP38i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE12_Referential_Status"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP40i_was_performed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the performance plan sanctioned by normative rule appealed to by the speech act  to bring about a new institutional fact. This performance plan indicates the series of necessary procedures that must be followed in order for the speech act to have been successfully carried out and to have created a genuine instance of the institutional fact that it was designed to make possible.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">was performed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP40i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P33i_was_used_by" />
+  </rdf:Property>
+<rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP41i_was_uttered_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. It is typical of performance plans for normative procedures to include a necessary invoking clause or set of clauses which must be uttered in the course of the performance of the speech act in order to for it to be successfully carried out. This property enables the documentation of the use of such a linguistic object.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">was uttered by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP41i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP42i_was_intentionally_initiated_by">
+    <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to connect the instance of speech act to the instance of institutional fact which it brought into existence through the correct performance of the specified performance to bring about the norm type it aimed to bring about.
+</rdfs:comment>
+    <rdfs:label xml:lang="en">was intentionally initiated by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP42i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP43i_is_similarity_subject_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate one of two entities for which the similarity status is taken to hold.</rdfs:comment>
+    <rdfs:label xml:lang="en">is similarity subject of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP43i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE14_Similarity_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1i_is_intentional_subject_of" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP44i_is_similarity_target_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the other entity for which the similarity status is taken to hold.</rdfs:comment>
+    <rdfs:label xml:lang="en">is similarity target ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP44i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE14_Similarity_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2i_is_intentional_target_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP45i_is_similarity_relation_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the specific type of similarity which is indicated as holding between the two entities indicated in the similarity status.</rdfs:comment>
+    <rdfs:label xml:lang="en">is similarity relation ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP45i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE14_Similarity_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3i_is_intentional_relation_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP46i_is_similarity_mode_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the specific manner in which the similarity status, which is indicated as holding between the two entities indicated in the similarity status, is the case. It''s function corresponds with the .1 properties in CIDOC-CRM 7.1.1.</rdfs:comment>
+    <rdfs:label xml:lang="en">is similarity mode ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP46i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE14_Similarity_Status"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP47i_is_set_belonging_subject_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate an entity which is taken as belonging to a particular set by the instance of set status.</rdfs:comment>
+    <rdfs:label xml:lang="en">is set belonging subject of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP47i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE15_Set_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1i_is_intentional_subject_of" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP48i_is_set_ascribed_by">
+    <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE24_Notional_Set"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the set to which an entity is indicated as belonging .</rdfs:comment>
+    <rdfs:label xml:lang="en">is set ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP48i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE15_Set_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2i_is_intentional_target_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP49i_is_set_belonging_relation_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the specific type of belonging to the set which is indicated as holding between the subject entity and the target set.</rdfs:comment>
+    <rdfs:label xml:lang="en">is set belonging subject of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP49i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE15_Set_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3i_is_intentional_relation_ascribed_by" />
+  </rdf:Property>
+<rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP51i_is_current_or_former_set_member_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to connect an instance of set to an entity considered to be one of its members.</rdfs:comment>
+    <rdfs:label xml:lang="en">is current or former member of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP51i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE24_Notional_Set"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP52i_was_intentionally_terminated_by">
+    <rdfs:domain rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to connect the instance of speech act to the instance of institutional fact which it cancels through the correct performance of the specified performance to bring about the norm type it aimed to bring about.</rdfs:comment>
+    <rdfs:label xml:lang="en">was intentionally terminated by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP52i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP53i_had_institutional_fact_initiated_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to connect the instance of speech act to the instance of group for whom it initiates the existence of a social fact through its performance.
+It serves as a shortcut for the fully developed semantic pathway, which instantiates the ZE1 Institutional Fact, in the path ZE13 Speech Act -&gt; ZP42 intentionally initiated -&gt; ZE1 Institutional Fact -&gt; ZP4 held by -&gt; E74 Group.</rdfs:comment>
+    <rdfs:label xml:lang="en">had institutional fact initiated by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP53i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP54i_is_relative_date_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E4_Period"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to connect the instance of dating status to the instance of a period to which another instance of period is related for the purposes of datation.</rdfs:comment>
+    <rdfs:label xml:lang="en">is relative date ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP54i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE25_Dating_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2i_is_intentional_target_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP55i_is_dating_subject_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E4_Period"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to connect the instance of dating status to an instance of a period typically associated with the existence or use of a physical thing or an object which is the ultimate object of inquiry.</rdfs:comment>
+    <rdfs:label xml:lang="en">is dating subject of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP55i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE25_Dating_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1i_is_intentional_subject_of" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP56i_is_dating_relation_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to assign the type of relationship the dated period of the object under investigation bears towards the period assigned to it as its datation.</rdfs:comment>
+    <rdfs:label xml:lang="en">is dating relation ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP56i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE25_Dating_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3i_is_intentional_relation_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP57i_is_obligation_subject_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate a dimension which represents an amount of debt owed from one party to another within an instance of formal obligation.</rdfs:comment>
+    <rdfs:label xml:lang="en">is obligation subject of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP57i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE28_Obligation_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1i_is_intentional_subject_of" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP58i_is_debtor_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate an actor whom is bound by an obligation which it is their duty to repay.</rdfs:comment>
+    <rdfs:label xml:lang="en">is debtor ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP58i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE28_Obligation_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2i_is_intentional_target_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP59i_is_oglibation_relation_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the specific type of obligation relation that holds between the two parties.</rdfs:comment>
+    <rdfs:label xml:lang="en">is obligation relation ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP59i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE28_Obligation_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3i_is_intentional_relation_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP60i_is_debtee_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the actor to whom an obligation is owed in the context of an obligation.</rdfs:comment>
+    <rdfs:label xml:lang="en">is debtee ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP60i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE28_Obligation_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2i_is_intentional_target_ascribed_by" />
+  </rdf:Property>
+<rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP61i_acquired_property_right_through">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the receiver of a property right from another party within the context of a transfer of property right.</rdfs:comment>
+    <rdfs:label xml:lang="en">acquired property right through</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP61i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE29_Transfer_of_Property_Right"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14i_performed" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP62i_surrendered_property_right_through">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the party ceding property right to another party within the context of a transfer of property right.</rdfs:comment>
+    <rdfs:label xml:lang="en">surrendered  property right through</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP62i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE29_Transfer_of_Property_Right"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP63i_had_change_in_property_right_through">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the legal object over which property right has been transfered from one party to another.</rdfs:comment>
+    <rdfs:label xml:lang="en">had change in property right through</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP63i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE29_Transfer_of_Property_Right"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P16i_was_used_for" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP64i_is_property_subject_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate an object that is subject to a property right of some actor.</rdfs:comment>
+    <rdfs:label xml:lang="en">is property right subject of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP64i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE30_Property_Right_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP1i_is_intentional_subject_of" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP65i_is_property_right_holder_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate an actor who holds a right over a legal object within the context of a property right status.</rdfs:comment>
+    <rdfs:label xml:lang="en">is property right holder ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP65i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE30_Property_Right_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP2i_is_intentional_target_ascribed_by" />
+  </rdf:Property>
+<rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP66i_is_property_right_relation_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the specific type of property right relation that is held over the legal object by the actor in the context of a property right status.</rdfs:comment>
+    <rdfs:label xml:lang="en">is property right relation ascribed by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP66i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE30_Property_Right_Status"/>
+    <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP3i_is_intentional_relation_ascribed_by" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP67i_had_obligation_generated_upon_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the party who owes another party within the the context of a declaration of obligation.</rdfs:comment>
+    <rdfs:label xml:lang="en">had obligation generated upon by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP67i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE27_Declaration_of_Obligation"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14i_performed" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP68i_had_obligation_to_generated_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the party who is owed by another party within the the context of a declaration of obligation.</rdfs:comment>
+    <rdfs:label xml:lang="en">had obligation generated to by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP68i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE27_Declaration_of_Obligation"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14i_performed" />
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP69i_is_obligation_generated_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the specific amount owed by one party to another within the context of a declaration of obligation.</rdfs:comment>
+    <rdfs:label xml:lang="en">is obligation generated by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP69i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE27_Declaration_of_Obligation"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP70i_is_relative_party_of">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate a third party actor for whom another''s social status holds relevance (in the form of rights and/or responsibilities that are thus due to them) in the instance of social status.</rdfs:comment>
+    <rdfs:label xml:lang="en">is  relative party of</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP70i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE6_Social_Status"/>
+  </rdf:Property>
+<rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP74i_had_institutional_fact_terminated_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to connect the instance of speech act to the instance of group for whom it terminates the existence of a social fact through its performance.
+It serves as a shortcut for the fully developed semantic pathway, which instantiates the ZE1 Institutional Fact, in the path ZE13 Speech Act -&gt; ZP52 intentionally terminated -&gt; ZE1 Institutional Fact -&gt; ZP4 held by -&gt; E74 Group.</rdfs:comment>
+    <rdfs:label xml:lang="en">had institutional fact terminated  by</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP74i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP75i_is_context_for">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate an event context which limits the temporal scope within which an instance of institutional fact is meant to hold. When indicated the event context stands as the frame in which the institutional fact is held to be valid by the associcated group for whom it has significance.</rdfs:comment>
+    <rdfs:label xml:lang="en">is context for</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP75i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP76i_is_context_type_for">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate an event context type which limits the spatio-temporal scope within which an instance of institutional fact is meant to hold to certain kinds of event. When indicated the event context type stands as the frame or frames in which the institutional fact is held to be valid by the associcated group for whom it has significance.</rdfs:comment>
+    <rdfs:label xml:lang="en">is context type for</rdfs:label>
+    <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP76i</skos:notation>
+    <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
     <rdfs:label xml:lang="en">is place ascribed by</rdfs:label>
     <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP77i</skos:notation>
     <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE35_Locative_Status"/>
