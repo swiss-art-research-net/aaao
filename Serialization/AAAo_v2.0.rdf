@@ -1226,10 +1226,7 @@ The case of speech act (ZE13) is a special case of symbolic act where the perfor
     <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
     <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P12_occurred_in_the_presence_of"/>
   </rdf:Property>
-  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP77i_is_place_ascribed_by">
-    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
-    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the place in a locative association that is taken to hold for an entity.</rdfs:comment>
-      <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP1i_is_intentional_subject_of">
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP1i_is_intentional_subject_of">
     <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
     <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to connect an instance of institutional fact to an entity with which it is concerned. The intentional subject indicated by this property is the object about which the institutional fact holds for the group committed to this institutional reality.</rdfs:comment>
     <rdfs:label xml:lang="en">is intentional subject of</rdfs:label>
@@ -1817,6 +1814,10 @@ It serves as a shortcut for the fully developed semantic pathway, which instanti
     <rdfs:label xml:lang="en">is context type for</rdfs:label>
     <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP76i</skos:notation>
     <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE1_Institutional_Fact"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="https://ontology.swissartresearch.net/aaao/ZP77i_is_place_ascribed_by">
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    <rdfs:comment xml:lang="en">This property is the inverse of the forward property described in the scope note that follows. This property is used to indicate the place in a locative association that is taken to hold for an entity.</rdfs:comment>
     <rdfs:label xml:lang="en">is place ascribed by</rdfs:label>
     <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZP77i</skos:notation>
     <rdfs:range rdf:resource="https://ontology.swissartresearch.net/aaao/ZE35_Locative_Status"/>
