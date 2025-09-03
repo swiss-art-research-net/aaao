@@ -2076,16 +2076,16 @@ It serves as a shortcut for the fully developed semantic pathway, which instanti
            The next section has additions which declare CRM and family classes subclasses or properties of AAAo classes or properties.
             -->
 
-<rdfs:Class rdf:about="E39_Actor">
+<rdfs:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">
     <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE36_Persons"/>
 </rdfs:Class>
-<rdfs:Class rdf:about="E13_Attribute_Assignment">
+<rdfs:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment">
     <rdfs:subClassOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZE13_Speech_Act"/>
 </rdfs:Class>
-<rdf:Property rdf:about="P11_had_participant">
+<rdf:Property rdf:about="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant">
     <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP121_involved" />
 </rdf:Property>
-<rdf:Property rdf:about="P43_has_dimension">
+<rdf:Property rdf:about="http://www.cidoc-crm.org/cidoc-crm/P43_has_dimension">
     <rdfs:subPropertyOf rdf:resource="https://ontology.swissartresearch.net/aaao/ZP122_has_ascribed_dimension" />
 </rdf:Property>
 
